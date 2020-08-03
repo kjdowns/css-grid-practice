@@ -3,6 +3,31 @@
 
 body {
     background-color: dimgray;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "left middle right"
+    "foot foot foot";
 }
 
 /* Grid */
+
+.navbar {
+    grid-area: nav;
+}
+
+.left-side {
+    grid-area: left;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.right-side {
+    grid-area: right;
+}
+
+.foot {
+    grid-area: foot;
+}
