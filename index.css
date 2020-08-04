@@ -3,31 +3,49 @@
 
 body {
     background-color: dimgray;
+    color: lavender;
+    font-size: 28px;
+    height: 100vh;
+    border: 10px solid black;
     display: grid;
-    grid-template-areas: 
-    "nav nav nav"
-    "left middle right"
-    "foot foot foot";
+    grid-template: 
+    "nav nav nav" 10%
+    "left middle right" 70%
+    "foot foot foot" 20%
+    / 15% 70% 15% ;
 }
 
 /* Grid */
 
 .navbar {
+    border: 10px solid rgb(78, 100, 173);
     grid-area: nav;
 }
 
+.nav-links {
+    float: right;
+}
+
+.nav-links li {
+    display: inline;
+}
+
 .left-side {
+    border: 10px solid rgb(78, 100, 173);
     grid-area: left;
 }
 
 .middle {
+    border: 10px solid rgb(78, 100, 173);
     grid-area: middle;
 }
 
 .right-side {
+    border: 10px solid rgb(78, 100, 173);
     grid-area: right;
 }
 
 .foot {
+    border: 10px solid rgb(78, 100, 173);
     grid-area: foot;
 }
